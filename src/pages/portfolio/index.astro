@@ -1,0 +1,127 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import gymland from "../../images/gymland.jpg";
+import bonvogage from '../../images/bonvoyage.jpg'
+import spotify from '../../images/spotifyClone.jpg'
+import monogram from '../../images/monogram.jpg'
+import starbucks from '../../images/starbucks.jpg'
+import monstercart from '../../images/monstercat.jpg'
+---
+
+<Layout title="Portfolio">
+  <div class="w-1/2 h-auto py-12 mx-auto main">
+    <div class="w-auto flex justify-center items-center">
+      <h3 class="text-white w-20 border-white border-b-4 my-8 text-xl">
+        Trabajos
+      </h3>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+      <a href="https://gymland-catalogue.vercel.app/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={gymland}
+              alt="gymlandhn"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">Gymland</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Catálogo web para una tienda en línea de ropa deportiva.
+            </p>
+          </div>
+      </a>
+      <a href="https://bonvoyagetours.online/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={bonvogage}
+              alt="bonvoyage"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">Bon voyage tours</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Un sitio web para una agencia de viajes, con la información de los paquetes que ellos ofrecen
+            </p>
+          </div>
+      </a>
+    </div>
+    <div class="w-auto flex justify-center items-center">
+      <h3 class="text-white w-22 border-white border-b-4 my-12 text-xl">
+        Proyectos
+      </h3>
+    </div>
+    <!-- proyectos -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 space-y-5 justify-center items-center">
+      <a href="https://spotify-clone-psi-steel.vercel.app/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={spotify}
+              alt="spotify clone proyect"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">Spotify Clone</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Un clon del productor de Spotify, con una lista de canciones listas para escuchar, diseño responsivo
+            </p>
+          </div>
+      </a>
+      <a href="https://monogram-tau.vercel.app/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={monogram}
+              alt="monogram Landing page"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">Monogram</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Un sitio web que muestra los productos de una tienda
+            </p>
+          </div>
+      </a>
+      <a href="https://starbucks-fawn.vercel.app/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={starbucks}
+              alt="Starbuks Landing page"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">Starbucks rewards page</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Página web interactiva con el diseño de Starbucks
+            </p>
+          </div>
+      </a>
+      <a href="https://monstercat-ten.vercel.app/" target="_blank">
+        <div class="w-auto flex flex-col justify-center items-center">
+            <Image
+              src={monstercart}
+              alt="monstercat Landing page"
+              class=" lg:w-[230px] lg:h-[128px] rounded-lg"
+            />
+            <h3 class="text-white text-xl my-1">monstercat</h3>
+            <p class="text-white text-md text-center px-8 my-2">
+              Un sitio web con el estilo de un artista musical, donde se muestran sus canciones
+            </p>
+          </div>
+      </a>
+    </div>
+  </div>
+  <h1 class=" lala">alalalala</h1>
+</Layout>
+
+
+<style>
+  .main{
+  opacity: 0; /* Establece la opacidad inicial a 0 */
+  animation: fadeIn 0.7s ease-in-out forwards; /* Aplica la animación */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Opacidad inicial */
+  }
+  to {
+    opacity: 1; /* Opacidad final */
+  }
+}
+
+</style>
