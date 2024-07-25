@@ -1,32 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components'
 ---
 
 <Layout title="José Vargas Portfolio">
-  <main class=" main w-auto flex flex-col justify-center items-center px-4 py-12 lg:w-1/2 h-auto lg:mx-auto lg:flex lg:flex-col lg:justify-start lg:items-center">
+  <main class=" overflow-x-hidden main w-auto flex flex-col justify-center items-center px-4 py-12 lg:w-1/2 h-auto lg:mx-auto lg:flex lg:flex-col lg:justify-start lg:items-center">
     <div class="bg-card mx-[30px] py-3 px-2 text-center lg:w-auto lg:py-3 lg:px-[60px] rounded-lg lg:my-[80px]">
-      <p class="text-white">Hola, soy web developer enfocado en el frontend</p>
+      <p class="text-white">Hello, I am a web developer focused on the frontend</p>
     </div>
     <div class="w-full flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-center lg:items-center">
       <div class="mx-8">
-        <h2 class="text-white font-bold text-[36px]">José Vargas</h2>
+        <h2 class="text-white font-bold text-[36px] text-center lg:text-left">José Vargas</h2>
         <p class="text-white text-[16px]">
            ( frontend / developer/ designer )
         </p>
       </div>
       <img
-        src="https://media.licdn.com/dms/image/D4E03AQGhXOvll20Niw/profile-displayphoto-shrink_400_400/0/1688507370234?e=1710374400&v=beta&t=RRwj7o9y87VRTIjfT1FqDYDmtBCniWOD7eH3j4VKhvM"
+        src="../../src//images/foto.jpeg"
         alt="joseVargas"
         class="h-[100px] my-[20px] w-[100px] rounded-full border-2 border-white"
       />
     </div>
-    <div class=" w-auto lg:w-[440px] flex flex-col">
+    <div class=" w-auto lg:w-[440px] flex flex-col justify-center items-center lg:items-start">
       <h3 class="text-white w-12 border-white border-b-4 text-xl">Work</h3>
       <p class="text-white my-2">
-        ¡Hola! Soy un apasionado desarrollador frontend y diseñador con un enfoque entusiasta en crear interfaces atractivas y funcionales. Mi cartera refleja mi habilidad para traducir ideas creativas en experiencias web impactantes, fusionando diseño y desarrollo de manera eficiente. Explora cómo puedo llevar tu visión al siguiente nivel. ¡Bienvenido a mi rincón digital!
-        Las tecnologias que uso son html,css y react.
-        Tambien manejo de frameworks como tailwindcss y astro
+        Hello! I am a passionate frontend developer and designer with a keen focus on creating attractive and functional interfaces. My portfolio reflects my ability to translate creative ideas into impactful web experiences, merging design and development efficiently. Explore how I can take your vision to the next level. Welcome to my digital corner!
+        The technologies I use are html, css and react.
+        Also use of frameworks such as tailwindcss and astro.
       </p>
       <div class="flex justify-center my-8">
         <a
@@ -37,8 +37,8 @@ import { Icon } from "astro-icon/components";
 	  </a>
       </div>
     </div>
-    <div class=" w-auto lg:w-[440px] flex flex-col justify-start items-start space-y-4 my-8">
-      <h3 class="text-white w-14 border-white border-b-4 text-xl">Redes</h3>
+    <div class=" w-auto lg:w-[440px] flex flex-col justify-center items-center lg:justify-start lg:items-start space-y-4 my-8">
+      <h3 class="text-white w-14 border-white border-b-4 text-xl">Social</h3>
       <a
         href="https://github.com/Jose-Vargas-Guerrero"
         target="_blank"
@@ -67,13 +67,13 @@ import { Icon } from "astro-icon/components";
         josevgdesarrollador@mail.com
       </a>
       <a
-        href="https://www.instagram.com/josevargas3117/"
+        href="https://www.instagram.com/jv_code3117/"
         target="_blank"
         class="text-[1rem] font-bold text-sky flex flex-row justify-start items-center px-3 py-1 rounded-lg
 			 hover:bg-sky/20 transition-colors ease-out"
       >
         <Icon name="mdi:instagram" class="text-[1.2rem]" />
-        @josevargas3117
+        jv_code3117
       </a>
     </div>
   </main>
